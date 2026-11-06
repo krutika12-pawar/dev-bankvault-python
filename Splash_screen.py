@@ -11,7 +11,7 @@ def render_splash_screen():
         st.set_page_config(page_title="BankVault", page_icon="🏦", layout="wide")
         st.title("Welcome to BankVault!")
         st.header("Secure Banking Solutions")
-        st.image("splash_screen.png", use_column_width=True)
+        st.image("splash_screen.png")
     else:
         st.session_state.Splash_screen = True
 
