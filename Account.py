@@ -71,7 +71,7 @@ class Account:
             st.warning("No transaction history found for this account.")
                            
 def update_initial_balance_in_file(account_number, new_balance):
-        file_path = "/Users/aniket/Desktop/UCB/OOPS Lectures/BankVault App/registration_data.txt"
+        file_path = "registration_data.txt"
         updated_lines = []
 
         with open(file_path, "r") as file:
