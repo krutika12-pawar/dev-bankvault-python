@@ -1,5 +1,6 @@
 import streamlit as st
 import re
+import os
 from Registration import validate_email
 from Dashboard import Dashboard
 
@@ -15,8 +16,10 @@ def Login():
         st.header("Login using your Email Id and Password.")
 
         # Load registration data from .Text file
-        with open("registration_data.txt", "r") as file:
-            registration_data = file.readlines()
+        registration_data = []
+        if os.path.exists("registration_data.txt"):
+            with open("registration_data.txt", "r") as file:
+                registration_data = file.readlines()
 
         # Login form fields Username, Password and Login button
         email_id = st.text_input("Email ID", placeholder="Enter your registered email id.", max_chars=51)
