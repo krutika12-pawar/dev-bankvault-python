@@ -13,7 +13,8 @@ A banking simulation web application developed using Python and Streamlit.
 - Streamlit
 - Object-Oriented Programming
 
-# Live demo - https://bankvault-app-krutika.streamlit.app/
+# Live demo
+- https://bankvault-app-krutika.streamlit.app/
 
 # Run locally
 pip install -r requirements.txt
